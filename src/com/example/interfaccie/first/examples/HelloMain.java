@@ -1,4 +1,4 @@
-package com.example.helloworld.interfaccie.first.examples;
+package com.example.interfaccie.first.examples;
 
 public interface HelloMain {
 
@@ -20,9 +20,12 @@ public interface HelloMain {
 		System.out.println(simona);
 		System.out.println(lorenzo);
 		System.out.println(lorenzo1);
-	}
+		Greeter g =  (() -> {
+			return "Implemented";
+		});
+		
+	}		
 
 	public default void factorymethod() {
 	}
 }
-

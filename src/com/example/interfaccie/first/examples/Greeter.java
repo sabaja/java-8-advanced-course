@@ -1,4 +1,4 @@
-package com.example.helloworld.interfaccie.first.examples;
+package com.example.interfaccie.first.examples;
 
 @FunctionalInterface
 public interface Greeter {
@@ -11,7 +11,8 @@ public interface Greeter {
 
 	// Creazione metodo factory che dia un'implentazione di riferimento per la mia
 	// interface Greeter
-	// fuori interfaccia newName or createName dentro interfaccia java 8 ofName
+	// Pre Java 8 si usa newName or createName 
+	// Con java 8 in un interfaccia funzionale con il metodo ofName
 	public static Greeter ofName(final String name) {
 
 		// definisco una classe a livello di metodo ed è visibile solo all'interno dell
@@ -49,7 +50,6 @@ public interface Greeter {
 //		Interfaccia implicitamente instanziata (niente new Greeter())
 		return () -> {
 			return name;
-
 		};
 	}
 }
