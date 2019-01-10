@@ -1,4 +1,4 @@
-package com.example.interfaccie.first.examples;
+package com.example.interfacce.examples;
 
 @FunctionalInterface
 public interface Greeter {
@@ -15,7 +15,7 @@ public interface Greeter {
 	// Con java 8 in un interfaccia funzionale con il metodo ofName
 	public static Greeter ofName(final String name) {
 
-		// definisco una classe a livello di metodo ed è visibile solo all'interno dell
+		// definisco una classe a livello di metodo ed ï¿½ visibile solo all'interno dell
 		// metodo
 		class DefaultGreeter implements Greeter {
 

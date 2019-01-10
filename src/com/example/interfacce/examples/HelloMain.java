@@ -1,4 +1,4 @@
-package com.example.interfaccie.first.examples;
+package com.example.interfacce.examples;
 
 public interface HelloMain {
 
