@@ -36,7 +36,10 @@ public class ClassLoaderDynamicLoaderJar {
 
 					File myfile = new File(file);
 					URL jarFile = new URL("jar", "file", myfile.getAbsolutePath() + "!/");
+
 					System.out.println("Url jarFile è corretto? " + myfile.canExecute());
+
+
 
 					URLClassLoader sysLoader = new URLClassLoader(new URL[] { jarFile },
 							ClassLoader.getSystemClassLoader());
