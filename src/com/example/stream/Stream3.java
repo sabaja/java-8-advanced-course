@@ -3,7 +3,6 @@ package com.example.stream;
 import java.util.List;
 
 import com.examples.sales.data.DataAccessObject;
-import com.examples.sales.data.Item;
 import com.examples.sales.data.Sale;
 
 public class Stream3 {
